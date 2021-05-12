@@ -1,0 +1,15 @@
+<div style="text-align:center; flex:auto; margin-left:100px">    
+    <div class="col-md-2"  *ngFor="let data of list" style="font-size: 21px; flex:auto;" (click)="onCardClick(data)">
+        <div class="col-md-2" style="background: rgb(241, 239, 234); flex:auto; width:200px; height:200px; text-align:center; margin-top:20px; background-color:rgb(239, 240, 194);">
+            <div class="row" style="font-size: 40px;">
+                {{data.name}}
+            </div>
+            <div class="row">
+                {{data.temp}}
+            </div>
+            <div class="row">
+                {{data.wind}}
+            </div>
+        </div>
+    </div>
+</div>

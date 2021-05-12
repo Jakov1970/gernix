@@ -1,0 +1,20 @@
+<div class="container" style="background-color: rgb(241, 229, 205);">
+    <table class="table" style="margin-top: 10px;">
+    <thead class="thead-dark" style="margin-top: 10px;">
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Max Temp</th>
+        <th scope="col">Min Temp</th>
+        <th scope="col">Wind</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let weather of dataWeather">
+      <tr>
+        <td>{{weather.time}}</td>
+        <td>{{weather.tempMax}}&deg; C</td>
+        <td>{{weather.tempMin}}&deg; C</td>
+        <td>{{weather.wind}} m/s</td>
+      </tr>
+    </tbody>
+    </table>
+  </div>
